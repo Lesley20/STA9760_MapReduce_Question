@@ -53,9 +53,9 @@ labs	0
 quux	4
 ```
 
-
-
 *Question*: How would you update the simple grep above to manage __any__ type of search? (In this case it encodes the "f" / "x" searching inside the reducer function). So basically, what if I wanted to find all the words that have "oo" or all the words that start in "k" but end in "e" or all the words that have a single capital letter in them?
+
+Use ```re``` (regular expression syntax) package to return the matach strings. 
 
 ```
 docker run \
@@ -63,4 +63,4 @@ docker run \
   -it sequenceiq/hadoop-docker:2.7.1 \
   /usr/local/hadoop/py/py_runner.sh grep1 ^k
 ```
-Use ```re``` (regular expression syntax) package to return the matach strings. 
+
