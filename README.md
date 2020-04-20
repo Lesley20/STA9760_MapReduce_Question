@@ -61,6 +61,6 @@ Use ```re``` (regular expression syntax) package to return the matach strings.
 docker run \
   -v $(pwd):/usr/local/hadoop/py \
   -it sequenceiq/hadoop-docker:2.7.1 \
-  /usr/local/hadoop/py/py_runner.sh grep1 ^k
+  /usr/local/hadoop/py/py_runner.sh grep1 oo
 ```
 
